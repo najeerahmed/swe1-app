@@ -8,6 +8,7 @@ install:
 script:
   - pytest
 
+
 deploy:
   provider: elasticbeanstalk
   access_key_id:
