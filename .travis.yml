@@ -16,7 +16,6 @@ script:
   - python ./ebdjango/manage.py
   # - python -m black . --check
   # - python -m flake8 --max-line-length=92
-  - python -m coverage run --source='.' manage.py test
 
 # deploy:
 #   provider: elasticbeanstalk
