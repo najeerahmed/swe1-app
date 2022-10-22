@@ -3,7 +3,7 @@ python:
   - 3.6
 # command to install dependencies
 install:
-  - pip install -r ~ebdjango/requirements.txt
+  - pip install -r /Users/najeer/Documents/GitHub/swe1-app/ebdjango/requirements.txt
 # command to run tests
 script:
   - pytest
