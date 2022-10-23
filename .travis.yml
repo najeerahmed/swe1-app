@@ -9,7 +9,7 @@ install:
 
 script:
   - black ./
-  - flake8 . --append-config .flake8
+  # - flake8 . --append-config .flake8
   - cd ebdjango
   - coverage run --source=ebdjango,polls manage.py test
 
