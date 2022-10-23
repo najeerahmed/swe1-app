@@ -25,7 +25,7 @@ deploy:
   region: "us-east-1"
   app: "django-tutorial"
   env: "django-env"
-  bucket_name: "elasticbeanstalk-us-west-2-316737002213"
+  bucket_name: "elasticbeanstalk-us-east-1-316737002213"
   on:
     all_branches: true
 
