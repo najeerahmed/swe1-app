@@ -13,10 +13,9 @@ before_script:
   - python ./ebdjango/manage.py migrate
 
 script:
-  - cd ebdjango
-  - python manage.py
+  - python ./ebdjango/manage.py
   - black --check
-  - flake8 .
+  - flake8 ./ebdjango
   - coverage run --source=ebdjango,polls ebdjango/manage.py test
 
 after_script:
