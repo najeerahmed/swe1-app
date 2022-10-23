@@ -14,8 +14,9 @@ before_script:
 
 script:
   - python ./ebdjango/manage.py
-  # - python -m black . --check
-  # - python -m flake8 --max-line-length=92
+  - python -m black . --check
+  - python -m flake8, --append-config .flake8
+  - coverage run --source=ebdjango,polls ebdjango/manage.py test polls
 
 # deploy:
 #   provider: elasticbeanstalk
@@ -27,3 +28,6 @@ script:
 #   app: "example-app-name"
 #   env: "example-app-environment"
 #   bucket_name: "the-target-S3-bucket"
+
+after_script:
+- coveralls
