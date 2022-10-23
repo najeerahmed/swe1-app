@@ -9,7 +9,7 @@ install:
 
 script:
   - black ./
-  # - flake8 . --append-config .flake8
+  - flake8 . --exit-zero --append-config .flake8
   - cd ebdjango
   - coverage run --source=ebdjango,polls manage.py test
 
@@ -26,4 +26,6 @@ deploy:
   app: "django-tutorial"
   env: "django-env"
   bucket_name: "elasticbeanstalk-us-west-2-316737002213"
+  on:
+    all_branches: true
 
