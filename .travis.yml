@@ -23,7 +23,7 @@ deploy:
   secret_access_key:
     secure: "F9vV+HQ/EfU7PMJQNXRvcYLNaXJB+eq2pw+yz7z+wLkc/P+MYXEvNoyoLPAl4Z/JaHM6n21YmvkIQzqikNq4MpwKkPlrS8/UloANDUZVJGXn7fm1HZOXFEP00FziWgUru66raZXVXcd6xtzUqpXVIZmSnPP1V0X93fItuGBQxpPrWgqEIWrBLC+zg2uiGIiyA3Zw+DkFi5MFQc+eqoAw5a/0PXWDe7seLbH1fKQjLloLnxdKt5MNWZ9al26TCX5qi36awhCSRTRTi/3Dbh7UYLHmp0RLrdQma9n/P/6HWODEkXBFxnP1uw4h1GLznksZb4oltARa0X1EgHdCDzpvBh/Y2IoJT47XfuTsJXMIC7LVhstHB5oPLdzluTCbH8awN28LWuhw0VJVJEuHdYtE8vttQt+64iYntzbGpXrho8kdKonoC4/xcJsC+eEygtX9pq+XSylj/zy9gLGEABmYWhJyHPdgFoynAYVOvr76jHQIedILiyxRea6VyNGLQ8LHdwbnJ2C2x4yo0K+1DzpT/S0aCdMzqEvtJQ1DYyTM36SbHRAN/tVzYXeDzy+5zBQHZ+y5WDkG6zDCCSI1VMrGfEBMhpSoshGOpxBrdTEXaZd9IUvUxu4Z0tBSerEVuGYjoWlXIFfK6hf0vQcvfwNvAsPRzQpLht/ZicUDNZpdpgM="
   region: "us-east-1"
-  app: "django-tutorial"
+  app: "swe1-app"
   env: "django-env"
   bucket_name: "elasticbeanstalk-us-east-1-316737002213"
   on:
