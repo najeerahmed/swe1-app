@@ -5,16 +5,11 @@ python:
 install:
   - pip install -r ./ebdjango/requirements.txt
 # command to run tests
-script:
-  - pytest
 
-
-before_script:
-  - python ./ebdjango/manage.py migrate
 
 script:
-  # - black ./ebdjango --check --line-length=99
-  - flake8 .
+  - black ./
+  - flake8 --max-line-length=130 --ignore=F405,F403,F541,W503,E231,E722,F401,E501,F821
   - coverage run --source=ebdjango,polls manage.py test
   - python -m coverage report -m
 
