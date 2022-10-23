@@ -6,7 +6,6 @@ install:
   - pip install -r ./ebdjango/requirements.txt
 # command to run tests
 
-
 script:
   - black ./
   - flake8 . --exit-zero --append-config .flake8
