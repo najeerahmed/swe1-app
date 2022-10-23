@@ -13,10 +13,10 @@ before_script:
   - python ./ebdjango/manage.py migrate
 
 script:
-  - python ./ebdjango/manage.py
-  - black --check ./
-  # - flake8 ./ebdjango
-  - coverage run --source=ebdjango,polls ebdjango/manage.py test
+  - python -m black . --check --line-length=99
+  - flake8 .
+  - coverage run --source=ebdjango,polls manage.py test
+  - python -m coverage report -m
 
 after_script:
 - coveralls
