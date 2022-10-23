@@ -14,7 +14,7 @@ before_script:
 
 script:
   - python ./ebdjango/manage.py
-  - python -m black . --check
+  - black --check .
   - flake8 ./ebdjango
   - coverage run --source=ebdjango,polls ebdjango/manage.py test
 
