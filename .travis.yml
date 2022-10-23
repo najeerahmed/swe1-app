@@ -9,7 +9,7 @@ install:
 
 script:
   - black ./
-  - flake8 --max-line-length=88 --ignore=FW293, other, error, codes
+  - flake8 . --append-config .flake8
   - cd ebdjango
   - coverage run --source=ebdjango,polls manage.py test
 
