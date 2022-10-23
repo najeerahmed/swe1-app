@@ -14,8 +14,8 @@ before_script:
 
 script:
   - python ./ebdjango/manage.py
-  - python -m black . --check
-  - python -m flake8, --append-config .flake8
+  - black --check
+  - flake8 .
   - coverage run --source=ebdjango,polls ebdjango/manage.py test
 
 after_script:
